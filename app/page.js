@@ -1,6 +1,6 @@
 import Image from "next/image";
 import First from "./components/First";
-import Second from "./components/Second";
+import Secondr from "./components/Secondr";
 import Third from "./components/Third";
 import Fourth from "./components/Fourth";
 import Client from "./components/Client";
@@ -12,13 +12,11 @@ export default function Home() {
   return (
     <div>
       <First/>
-      <Second/>
+      <Secondr/>
       <Third/>
       <Fourth/>
       <Client/>
       <Sixth/>
-      <SemiFooter/>
-      <Footer/>
     </div>
   );
 }
