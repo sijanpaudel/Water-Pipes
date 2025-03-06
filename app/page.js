@@ -3,10 +3,10 @@ import First from "./components/First";
 import Secondr from "./components/Secondr";
 import Third from "./components/Third";
 import Fourth from "./components/Fourth";
-import Client from "./components/Client";
 import Sixth from "./components/Sixth";
 import SemiFooter from "./components/SemiFooter";
 import Footer from "./components/Footer";
+import TestimonialSlider from "./components/TestimonialSilder";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <Secondr/>
       <Third/>
       <Fourth/>
-      <Client/>
+      <TestimonialSlider/>
       <Sixth/>
     </div>
   );

@@ -1,29 +1,36 @@
-import React from 'react'
+import React from 'react';
 
 const First = () => {
     return (
-        <>
-            <div className="relative">
-                <div className="absolute inset-0 bg-fixed z-10">
-                    <img src="image 32.png" className="w-full h-[600px]" alt="" />
-                </div>
-
-                <div className="flex flex-col relative z-20 pt-6 pl-6 text-white">
-                    <div  className='ml-[197] mt-[157] w-[520] h-[228]'>   
-                        <p className='text-[#338C00] my-1'>100% Satisfaction Guarentee</p>
-                        <h1 className='font-bold text-5xl my-1'><span className='text-[#1E1E1E]'>WE ARE TOP</span> <span className='text-[#00227B]'>PIPES MANUFACTURER</span></h1>
-                        <button className='w-[142] h-[41] my-2 bg-[#00227B] rounded-lg'>Learn More</button>
-                    </div>
-        
-                    <div className='flex justify-center'>
-                        <img src="Frame 28.png" className='h-[330] w-[920]' alt="" />
-                    </div>
-                    
-                </div>
+        <div className="relative w-full">
+            {/* Background Image */}
+            <div className="absolute inset-0 bg-fixed z-10">
+                <img src="image 32.png" className="w-full h-[60vh] md:h-[70vh] object-cover" alt="Background" />
             </div>
 
-        </>
-    )
-}
+            {/* Content */}
+            <div className="relative z-20 flex flex-col items-center text-white px-6 pt-10 md:pt-20 lg:pt-28">
+                {/* Text Section */}
+                <div className="max-w-2xl text-center md:text-left">
+                    <p className="text-[#338C00] mb-2 text-sm md:text-base">
+                        100% Satisfaction Guarantee
+                    </p>
+                    <h1 className="font-bold text-3xl md:text-5xl leading-tight">
+                        <span className="text-[#1E1E1E]">WE ARE TOP </span>
+                        <span className="text-[#00227B]">PIPES MANUFACTURER</span>
+                    </h1>
+                    <button className="mt-4 px-5 py-2 bg-[#00227B] rounded-lg text-white text-sm md:text-base">
+                        Learn More
+                    </button>
+                </div>
 
-export default First
+                {/* Image Section */}
+                <div className="flex justify-center w-full mt-6 md:mt-10">
+                    <img src="Frame 28.png" className="w-full max-w-4xl object-contain" alt="Product Showcase" />
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default First;
